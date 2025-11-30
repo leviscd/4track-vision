@@ -1,6 +1,12 @@
+import { Link } from 'react-router-dom';
 import Logo4Track from './Logo4Track';
 
 const Footer = () => {
+  const openWhatsApp = () => {
+    const url = 'https://wa.me/5544999119849';
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <footer className="relative py-16 px-4 border-t border-border/50">
       <div className="absolute inset-0 bg-gradient-to-t from-purple-deep/20 to-transparent pointer-events-none" />
@@ -10,10 +16,18 @@ const Footer = () => {
           <Logo4Track />
           
           <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-primary transition-colors">Termos de Uso</a>
-            <a href="#" className="hover:text-primary transition-colors">Política de Privacidade</a>
-            <a href="#" className="hover:text-primary transition-colors">Suporte</a>
-            <a href="#" className="hover:text-primary transition-colors">Contato</a>
+            <Link to="/auth" className="hover:text-primary transition-colors">
+              Entrar
+            </Link>
+            <Link to="/planos" className="hover:text-primary transition-colors">
+              Planos
+            </Link>
+            <button onClick={openWhatsApp} className="hover:text-primary transition-colors">
+              Suporte
+            </button>
+            <button onClick={openWhatsApp} className="hover:text-primary transition-colors">
+              Contato
+            </button>
           </div>
         </div>
         
