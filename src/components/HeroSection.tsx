@@ -16,7 +16,6 @@ const HeroSection = () => {
         
         {/* Main Title */}
         <h1 className="font-orbitron text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in-delayed">
-          <span className="text-foreground">4Track — </span>
           <span className="text-primary text-glow-intense">O Futuro</span>
           <br />
           <span className="text-foreground">da Análise Inteligente de Dados</span>
