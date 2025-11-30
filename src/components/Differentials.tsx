@@ -4,17 +4,12 @@ const differentials = [
   {
     icon: Shield,
     title: 'Segurança Avançada',
-    description: 'Criptografia de ponta a ponta com protocolos de segurança corporativa.',
+    description: 'Protocolos de segurança corporativa.',
   },
   {
     icon: Zap,
     title: 'Velocidade Extrema',
     description: 'Consultas processadas em milissegundos com infraestrutura otimizada.',
-  },
-  {
-    icon: Target,
-    title: 'Precisão Profissional',
-    description: 'Dados verificados e validados com múltiplas fontes confiáveis.',
   },
   {
     icon: Network,
