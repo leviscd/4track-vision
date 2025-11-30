@@ -1,6 +1,12 @@
-import { User, Building2, MapPin, Phone, Car, Database } from 'lucide-react';
+import { User, Building2, Mail, Phone, Car, Database } from 'lucide-react';
 
 const modules = [
+  {
+    icon: Car,
+    title: 'Consulta Veículo',
+    description: 'Informações relacionadas a proprietários, e informações sobre o veículo em geral.',
+    available: true,
+  },
   {
     icon: User,
     title: 'Consulta CPF / Nome',
@@ -14,22 +20,16 @@ const modules = [
     available: true,
   },
   {
-    icon: MapPin,
-    title: 'Consulta Endereço',
-    description: 'Localização precisa com histórico e dados complementares.',
+    icon: Mail,
+    title: 'Consulta E-mail',
+    description: 'Consulta informações da pessoa relacionada ao e-mail.',
     available: true,
   },
   {
     icon: Phone,
     title: 'Consulta Telefone',
-    description: 'Rastreamento de números com vinculações e operadoras.',
+    description: 'Rastreamento de informações de uma pessoa através de seu telefone.',
     available: true,
-  },
-  {
-    icon: Car,
-    title: 'Consulta Veículo',
-    description: 'Disponível apenas para contas autorizadas.',
-    available: false,
   },
   {
     icon: Database,
