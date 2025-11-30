@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Logo4Track from './Logo4Track';
 import { Button } from './ui/button';
 
@@ -31,32 +32,36 @@ const HeroSection = () => {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-delayed-2">
           {/* Primary Button */}
-          <Button 
-            variant="hero" 
-            size="lg"
-            className="min-w-[220px] btn-scanner"
-          >
-            <span className="relative z-10 flex items-center gap-2">
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
-              </svg>
-              Entrar no Sistema
-            </span>
-          </Button>
+          <Link to="/auth">
+            <Button 
+              variant="hero" 
+              size="lg"
+              className="min-w-[220px] btn-scanner"
+            >
+              <span className="relative z-10 flex items-center gap-2">
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+                </svg>
+                Entrar no Sistema
+              </span>
+            </Button>
+          </Link>
           
           {/* Secondary Button */}
-          <Button 
-            variant="heroSecondary" 
-            size="lg"
-            className="min-w-[220px]"
-          >
-            <span className="flex items-center gap-2">
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
-              </svg>
-              Criar Conta
-            </span>
-          </Button>
+          <Link to="/planos">
+            <Button 
+              variant="heroSecondary" 
+              size="lg"
+              className="min-w-[220px]"
+            >
+              <span className="flex items-center gap-2">
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+                </svg>
+                Comprar Acesso
+              </span>
+            </Button>
+          </Link>
         </div>
         
         {/* Stats */}
