@@ -69,7 +69,7 @@ const HeroSection = () => {
            
             { value: '0.5s', label: 'Tempo de retorno Médio' },
             { value: '24/7', label: 'Disponibilidade' },
-           { value: 'Atualizações', label: 'Constantes' },
+           { value: 'Updates', label: 'Constantes' },
             { value: 'Api´s', label: 'Para desenvolvedores' },
           ].map((stat, i) => (
             <div key={i} className="glass-card p-4 float" style={{ animationDelay: `${i * 0.5}s` }}>
