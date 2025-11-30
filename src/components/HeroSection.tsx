@@ -66,9 +66,8 @@ const HeroSection = () => {
         {/* Stats */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           {[
-            { value: '99.9%', label: 'Precisão' },
-            { value: '<0.5s', label: 'Tempo Médio' },
-            { value: '256-bit', label: 'Criptografia' },
+           
+            { value: '0.5s', label: 'Tempo de retorno Médio' },
             { value: '24/7', label: 'Disponibilidade' },
           ].map((stat, i) => (
             <div key={i} className="glass-card p-4 float" style={{ animationDelay: `${i * 0.5}s` }}>
