@@ -3,38 +3,38 @@ import { User, Building2, Mail, Phone, Car, Database } from 'lucide-react';
 const modules = [
   {
     icon: Car,
-    title: 'Consulta Veículo',
-    description: 'Informações relacionadas a proprietários, e informações sobre o veículo em geral.',
+    title: 'Consultas Veículares',
+    description: 'Informações relacionadas a proprietários e sobre os veículos.',
     available: true,
   },
   {
     icon: User,
-    title: 'Consulta CPF / Nome',
+    title: 'Consultas CPF / Nome',
     description: 'Busca avançada por dados pessoais com cruzamento inteligente.',
     available: true,
   },
   {
     icon: Building2,
-    title: 'Consulta CNPJ',
+    title: 'Consultas CNPJ',
     description: 'Informações empresariais completas e atualizadas em tempo real.',
     available: true,
   },
   {
     icon: Mail,
-    title: 'Consulta E-mail',
+    title: 'Consultas E-mail',
     description: 'Consulta informações da pessoa relacionada ao e-mail.',
     available: true,
   },
   {
     icon: Phone,
-    title: 'Consulta Telefone',
+    title: 'Consultas Telefone',
     description: 'Rastreamento de informações de uma pessoa através de seu telefone.',
     available: true,
   },
   {
     icon: Database,
-    title: 'Cruzamento de Dados',
-    description: 'Análise profunda correlacionando múltiplas fontes.',
+    title: 'Análises de Dados Gerais',
+    description: 'e muito +, acesse já!',
     available: true,
   },
 ];
